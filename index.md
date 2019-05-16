@@ -632,6 +632,7 @@ please preview your site before committing, and make sure to run
   {% endcomment %}
 </div> {% comment %} End of 'Python' section. {% endcomment %}
 
+<!--
 <div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
   <h3>R</h3>
 
@@ -846,3 +847,4 @@ please preview your site before committing, and make sure to run
   </ol>
 </div>
 {% endcomment %}
+-->
