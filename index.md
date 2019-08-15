@@ -18,24 +18,6 @@ collaborative_notes: "https://pad.carpentries.org/2019-05-21-ncsa"            # 
 eventbrite: "69039305421"          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
-{% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
-
-{% comment %}
-HEADER
-
-Edit the values in the block above to be appropriate for your workshop.
-If the value is not 'true', 'false', 'null', or a number, please use
-double quotation marks around the value, unless specified otherwise.
-And run 'make workshop-check' *before* committing to make sure that changes are good.
-{% endcomment %}
-
-
-
-{% comment %}
-For a workshop please delete the following block
-{% endcomment %}
-
-
 {% if page.carpentry != site.carpentry %}
 <div class="alert alert-warning">
 You specified <code>carpentry: {{page.carpentry}}</code> in <code>index.md</code> and
@@ -44,15 +26,6 @@ see the changes take effect locally.
 </div>
 {% endif %}
 
-{% comment %}
-EVENTBRITE
-
-This block includes the Eventbrite registration widget if
-'eventbrite' has been set in the header.  You can delete it if you
-are not using Eventbrite, or leave it in, since it will not be
-displayed if the 'eventbrite' field in the header is not set.
-{% endcomment %}
-{% if page.eventbrite %}
 <iframe
   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
   frameborder="0"
@@ -60,7 +33,6 @@ displayed if the 'eventbrite' field in the header is not set.
   height="280px"
   scrolling="auto">
 </iframe>
-{% endif %}
 
 
 <h2 id="general">General Information</h2>
